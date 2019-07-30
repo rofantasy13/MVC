@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Get Text File Demo1</title>
+</head>
+<body>
+<h2>Get Text File Demo1</h2>
+<div id="demo"></div>
+<script>
+var xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function(){
+	if(this.readyState == 4 && this.status == 200){
+	var txt = this.getAllResponseHeaders();	
+	text += "<br>Last-Modified: " + this.getResponseHeader("Last-Modified");
+	text += "<br>Content-Type: " + this.getResponseHeader("Content-Type");
+	text += "<br>Content-Length: " + this.getResponseHeader("Content-Length");
+	document.getElementById("demo").innerHTML = txt;
+}
+}
+xhttp.open("GET","res/info.txt",true);
+xhttp.send();
+</script>
+</body>
+</html>

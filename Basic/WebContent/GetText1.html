@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Get Text File Demo1</title>
+</head>
+<body>
+<h2>Get Text File Demo1</h2>
+<div id="demo"></div>
+<script>
+var xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function(){
+	if(xhttp.readyState == 4 && xhttp.status == 200)
+		document.getElementById("demo").innerHTML = xhttp.responseText;
+}
+xhttp.open("GET","res/info.txt",true);
+xhttp.send();
+</script>
+</body>
+</html>
