@@ -1,0 +1,43 @@
+ [
+	{"id":"game1",
+	"title":"最後生還者",
+	"platform":"PlayStation4",
+	"company":"NaughtyDog",
+	"publishDate":"2013/06/14",
+	"price":"1500"},
+    
+    {"id":"game2",
+	"title":"GodofWar",
+	"platform":"PlayStation4",
+	"company":"SONY",
+	"publishDate":"2018/04/20",
+	"price":"1600"},
+
+	{"id":"game3",
+	"title":"尼爾：自動人形",
+	"platform":"PC",
+	"company":"白金工作室",
+	"publishDate":"2017/02/03",
+	"price":"1800"},
+
+    {"id":"game4",
+	"title":"隻狼：暗影雙死",
+	"platform":"PlayStation4",
+	"company":"From Software",
+	"publishDate":"2019/03/22",
+	"price":"1300"},
+	
+	{"id":"game5",
+	"title":"黑暗靈魂3",
+	"platform":"PlayStation4/PC",
+	"company":"From Software",
+	"publishDate":"2019/04/12",
+	"price":"1400"},
+	
+	{"id":"game6",
+	"title":"宵星傳奇",
+	"platform":"Switch",
+	"company":"南夢宮萬代",
+	"publishDate":"2019/01/11",
+	"price":"1700"}
+        ]

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Get json File Demo</title>
+</head>
+<body>
+
+	<h2>Get XML File Demo1</h2>
+	<table border='1' id="demo"></table>
+
+	<script>
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (xhttp.readyState == 4 && xhttp.status == 200) {
+				var txt = "<tr><th>序號<th>遊戲名稱<th>開發平台<th>開發公司<th>發售日期<th>建議售價";
+				var games =JSON.parse(xhttp.responseText);
+				for (i = 0; i < games.length; i++){
+					txt +="<tr><td>" +games[i].id;
+					txt +="<td>" +games[i].title;
+					txt +="<td>" +games[i].platform;
+					txt +="<td>" +games[i].company;
+					txt +="<td>" +games[i].publishDate;
+					txt +="<td>" +games[i].price;
+		
+			}
+				document.getElementById("demo").innerHTML = txt;
+			}
+		}
+		xhttp.open("GET", "res/games.json", true);
+		xhttp.send();
+	</script>
+</body>
+</html>
